@@ -136,6 +136,9 @@ function buyWeapon() {
         }
     } else {
         text.innerText = "You already have the most powerful weapon!";
+
+        button2.innerText = "Sell weapon for 15 gold";
+        button2.onclick = sellWeapon;
     }
 }
 
@@ -146,10 +149,10 @@ function update(location) {
     button1.onclick = location["button functions"][0];
 
     button2.innerText = location["button text"][1];
-    button2.onclick = location["button functions"][1];;
+    button2.onclick = location["button functions"][1];
 
     button3.innerText = location["button text"][2];
-    button3.onclick = location["button functions"][2];;
+    button3.onclick = location["button functions"][2];
 }
 
 function fightSlime() {
