@@ -168,6 +168,6 @@ function sellWeapon() {
         gold += 15;
         goldText.innerText = gold;
 
-        let currentWeapon;
+        let currentWeapon = inventory.shift();
     }
 }
