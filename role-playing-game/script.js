@@ -90,7 +90,7 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
-// Functions
+// --- locations
 function goTown() {
     update(locations[0]);
 }
@@ -103,10 +103,21 @@ function goCave() {
     update(locations[2]);
 }
 
-function fightDragon() {
-    console.log("Fighting dragon.");
+function update(location) {
+    text.innerText = location.text;
+
+    button1.innerText = location["button text"][0];
+    button1.onclick = location["button functions"][0];
+
+    button2.innerText = location["button text"][1];
+    button2.onclick = location["button functions"][1];
+
+    button3.innerText = location["button text"][2];
+    button3.onclick = location["button functions"][2];
 }
 
+
+// --- Shop
 function buyHealth() {
     if (gold >= 10) {
         gold -= 10;
@@ -142,27 +153,6 @@ function buyWeapon() {
     }
 }
 
-function update(location) {
-    text.innerText = location.text;
-
-    button1.innerText = location["button text"][0];
-    button1.onclick = location["button functions"][0];
-
-    button2.innerText = location["button text"][1];
-    button2.onclick = location["button functions"][1];
-
-    button3.innerText = location["button text"][2];
-    button3.onclick = location["button functions"][2];
-}
-
-function fightSlime() {
-
-}
-
-function fightBeast() {
-
-}
-
 function sellWeapon() {
     if (inventory.length > 1) {
         gold += 15;
@@ -174,4 +164,36 @@ function sellWeapon() {
     } else {
         text.innerText = "Don't sell your only weapon!";
     }
+}
+
+
+// --- Combat
+const monsters = [
+    {
+        name: "slime",
+        level: 2,
+        health: 15
+    },
+    {
+        name: "fanged beast",
+        level: 8,
+        health: 60
+    },
+    {
+        name: "dragon",
+        level: 20,
+        health: 300
+    },
+];
+
+function fightSlime() {
+
+}
+
+function fightBeast() {
+
+}
+
+function fightDragon() {
+    console.log("Fighting dragon.");
 }
