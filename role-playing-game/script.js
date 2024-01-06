@@ -129,6 +129,7 @@ function buyWeapon() {
         text.innerText = "You now have a "+ newWeapon +".";
 
         inventory.push(newWeapon);
+        text.innerText += " In your inventory you have: ";
     }
 }
 
