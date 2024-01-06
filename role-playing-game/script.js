@@ -120,7 +120,7 @@ function buyHealth() {
 }
 
 function buyWeapon() {
-    
+    if (gold >= 30) {}
 }
 
 function update(location) {
