@@ -82,6 +82,20 @@ const locations = [
             fightBeast,
             goTown
         ]
+    },
+    {
+        name: "fight",
+        text: "You are fighting a monster.",
+        "button text" : [
+            "Attack",
+            "Dodge",
+            "Run"
+        ],
+        "button functions" : [
+            attack,
+            dodge,
+            goTown
+        ]
     }
 ];
 
