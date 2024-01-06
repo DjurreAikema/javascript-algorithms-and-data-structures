@@ -170,5 +170,6 @@ function sellWeapon() {
 
         let currentWeapon = inventory.shift();
         text.innerText = "You sold a " + currentWeapon + ".";
+        text.innerText += " In your inventory you have: " + inventory;
     }
 }
