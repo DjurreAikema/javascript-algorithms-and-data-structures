@@ -132,6 +132,8 @@ function goCave() {
 }
 
 function update(location) {
+    monsterStats.style.display = "none";
+
     text.innerText = location.text;
 
     button1.innerText = location["button text"][0];
