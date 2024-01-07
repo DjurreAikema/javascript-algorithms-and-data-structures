@@ -372,6 +372,10 @@ function pick(guess) {
     }
 
     text.innerText = "You picked "+ guess +". Here are the random numbers:\n"
+
+    for (let x = 1; x < 5; x++) {
+
+    }
 }
 
 function pickTwo() {
