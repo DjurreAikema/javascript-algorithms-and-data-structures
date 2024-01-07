@@ -343,3 +343,9 @@ function restart() {
 
     goTown();
 }
+
+
+// --- Easter egg
+function easterEgg(){
+    update(locations[7]);
+}
