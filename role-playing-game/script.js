@@ -110,6 +110,20 @@ const locations = [
             goTown,
             goTown
         ]
+    },
+    {
+        name: "lose",
+        text: 'You die. ☠️',
+        "button text" : [
+            "REPLAY?",
+            "REPLAY?",
+            "REPLAY?"
+        ],
+        "button functions" : [
+            restart,
+            restart,
+            restart
+        ]
     }
 ];
 
