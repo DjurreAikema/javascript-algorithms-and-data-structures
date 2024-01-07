@@ -108,7 +108,7 @@ const locations = [
         "button functions" : [
             goTown,
             goTown,
-            goTown
+            easterEgg
         ]
     },
     {
