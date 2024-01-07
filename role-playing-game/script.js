@@ -96,6 +96,20 @@ const locations = [
             dodge,
             goTown
         ]
+    },
+    {
+        name: "kill monster",
+        text: "The monster screams Arg! as it dies. You gain experience points and find gold.",
+        "button text" : [
+            "Go to town square",
+            "Go to town square",
+            "Go to town square"
+        ],
+        "button functions" : [
+            goTown,
+            goTown,
+            goTown
+        ]
     }
 ];
 
