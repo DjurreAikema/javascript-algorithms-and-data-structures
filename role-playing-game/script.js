@@ -99,7 +99,7 @@ const locations = [
     },
     {
         name: "kill monster",
-        text: "The monster screams Arg! as it dies. You gain experience points and find gold.",
+        text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.',
         "button text" : [
             "Go to town square",
             "Go to town square",
