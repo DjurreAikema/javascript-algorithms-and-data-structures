@@ -274,3 +274,19 @@ function defeatMonster() {
 function lose() {
     update(locations[5]);
 }
+
+function restart() {
+    xp = 0;
+    xpText.innerText = xp;
+
+    health = 100;
+    healthText.innerText = health;
+
+    gold = 50;
+    goldText.innerText = gold;
+
+    currentWeapon = 0;
+    inventory = ['stick'];
+
+    goTown();
+}
