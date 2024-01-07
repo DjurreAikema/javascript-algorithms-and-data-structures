@@ -229,6 +229,7 @@ function attack() {
     text.innerText += " You attack it with your " + weapons[currentWeapon].name  + "."
 
     health -= monsters[fighting].level;
+    monsterHealth -= weapons[currentWeapon].power;
 }
 
 function dodge() {
