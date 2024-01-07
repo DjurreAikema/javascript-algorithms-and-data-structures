@@ -1,0 +1,22 @@
+# Top-most EditorConfig file.
+root = true
+
+# Section for C# files
+[*.cs]
+
+# Section for JavaScript files
+[*.js]
+
+#### Core EditorConfig Options ####
+
+# Indentation and spacing
+indent_style = space
+indent_size = 2
+
+# New line preferences
+end_of_line = crlf
+insert_final_newline = false
+trim_trailing_whitespace = true
+
+# Charset preference
+charset = utf-8

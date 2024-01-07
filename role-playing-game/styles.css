@@ -20,10 +20,11 @@ body {
     padding: 10px;
 }
 
-#controls, #stats {
+#controls,
+#stats {
     border: 1px solid#0a0a23;
     color: #0a0a23;
-    padding: 5px;    
+    padding: 5px;
 }
 
 #monsterStats {
@@ -32,11 +33,12 @@ body {
     background-color: #c70d0d;
     border: 1px solid#0a0a23;
     color: #ffffff;
-    padding: 5px;    
+    padding: 5px;
 }
 
 .stat {
-    padding-right: 10px;;
+    padding-right: 10px;
+    ;
 }
 
 button {
