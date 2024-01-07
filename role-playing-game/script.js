@@ -138,6 +138,20 @@ const locations = [
             restart,
             restart
         ]
+    },
+    {
+        name: "easter egg",
+        text: 'You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!',
+        "button text" : [
+            "2",
+            "8",
+            "Go to town square?"
+        ],
+        "button functions" : [
+            pickTwo,
+            pickEight,
+            goTown
+        ]
     }
 ];
 
