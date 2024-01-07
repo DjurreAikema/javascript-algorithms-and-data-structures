@@ -124,6 +124,20 @@ const locations = [
             restart,
             restart
         ]
+    },
+    {
+        name: "win",
+        text: 'You defeat the dragon! YOU WIN THE GAME! 🎉',
+        "button text" : [
+            "REPLAY?",
+            "REPLAY?",
+            "REPLAY?"
+        ],
+        "button functions" : [
+            restart,
+            restart,
+            restart
+        ]
     }
 ];
 
