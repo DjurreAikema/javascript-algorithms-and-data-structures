@@ -24,5 +24,6 @@ function addEntry() {
 
   const HTMLString = `
   <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
-  <input type="text" placeholder="Name" id="${entryDropdown.value}-${entryNumber}-name">`;
+  <input type="text" id="${entryDropdown.value}-${entryNumber}-name" placeholder="Name" />
+  <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>`;
 }
