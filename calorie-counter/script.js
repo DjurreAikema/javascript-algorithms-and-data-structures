@@ -9,4 +9,5 @@ let isError = false;
 
 function cleanInputString(str) {
     let strArray = str.split('');
+    let cleanStrArray = [];
 }
