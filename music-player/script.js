@@ -125,3 +125,5 @@ const playSong = (id) => {
   playButton.classList.add("playing");
   audio.play();
 }
+
+playButton.addEventListener("click", () => { });
