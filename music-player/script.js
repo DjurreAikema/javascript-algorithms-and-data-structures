@@ -167,3 +167,5 @@ const playPreviousSong = () => {
     playSong(previousSong.id);
   }
 };
+
+previousButton.addEventListener("click", playPreviousSong);
