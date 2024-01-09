@@ -220,7 +220,11 @@ shuffleButton.addEventListener("click", shuffle);
 
 const deleteSong = (id) => {
   if (userData?.currentSong?.id === id) {
+    userData.currentSong = null;
+    userData.songCurrentTime = 0;
 
+    pauseSong();
+    setPlayerDisplay();
   }
 
   userData.songs = userData?.songs.filter((song) => song.id !== id);
