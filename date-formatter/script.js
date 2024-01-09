@@ -8,7 +8,7 @@ const year = date.getFullYear();
 const hours = date.getHours();
 const minutes = date.getMinutes();
 
-const formattedDate = `${day} - ${month} - ${year}`;
+const formattedDate = `${day}-${month}-${year}`;
 currentDateParagraph.textContent = formattedDate;
 
 dateOptionsSelectElement.addEventListener("change", () => {
@@ -21,7 +21,7 @@ dateOptionsSelectElement.addEventListener("change", () => {
         .join("-");
       break;
     case 'mm-dd-yyyy-h-mm':
-      currentDateParagraph.textContent = ``;
+      currentDateParagraph.textContent = `${month}-${day}-${year} ${hours} Hours ${minutes} Minutes`;
       break;
   };
 
