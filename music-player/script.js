@@ -252,3 +252,6 @@ const deleteSong = (id) => {
     resetButton.remove();
   });
 };
+
+
+audio.addEventListener("ended", () => { });
