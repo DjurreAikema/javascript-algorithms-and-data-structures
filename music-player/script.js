@@ -133,3 +133,6 @@ playButton.addEventListener("click", () => {
     playSong(userData?.currentSong.id);
   }
 });
+
+
+const pauseSong = () => { };
