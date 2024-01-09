@@ -117,5 +117,7 @@ const playSong = (id) => {
 
   if (userData?.currentSong === null || userData?.currentSong.id !== song.id) {
     audio.currentTime = 0;
+  } else {
+    audio.currentTime = userData.songCurrentTime;
   }
 }
