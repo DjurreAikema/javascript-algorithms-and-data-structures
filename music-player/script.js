@@ -182,3 +182,6 @@ const highlightCurrentSong = () => {
 
   if (songToHighlight) songToHighlight.setAttribute("aria-current", "true");
 };
+
+
+const setPlayerDisplay = () => { };
