@@ -254,4 +254,7 @@ const deleteSong = (id) => {
 };
 
 
-audio.addEventListener("ended", () => { });
+audio.addEventListener("ended", () => {
+  const currentSongIndex = getCurrentSongIndex();
+  const nextSongExists = userData?.songs[currentSongIndex + 1] !== undefined ? true : false;
+});
