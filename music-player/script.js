@@ -104,7 +104,7 @@ const renderSongs = (array) => {
   }).join("");
 
   playlistSongs.innerHTML = songsHTML;
-}
+};
 
 renderSongs(userData?.songs);
 
@@ -127,7 +127,7 @@ const playSong = (id) => {
   setPlayerDisplay();
   setPlayButtonAccessibleText();
   audio.play();
-}
+};
 
 playButton.addEventListener("click", () => {
   if (userData?.currentSong === null) {
@@ -201,7 +201,7 @@ const setPlayerDisplay = () => {
 const setPlayButtonAccessibleText = () => {
   const song = userData?.currentSong || userData?.songs[0];
   playButton.setAttribute("aria-label", song?.title ? `Play ${song.title}` : "Play");
-}
+};
 
 
 const shuffle = () => {
@@ -216,3 +216,8 @@ const shuffle = () => {
 };
 
 shuffleButton.addEventListener("click", shuffle);
+
+
+const deleteSong = (id) => {
+
+};
