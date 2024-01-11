@@ -7,4 +7,5 @@ const playersDropdownList = document.getElementById('players');
 
 const myFavoriteFootballTeam = {
   team: "Argentina",
+  sport: "Football",
 };
