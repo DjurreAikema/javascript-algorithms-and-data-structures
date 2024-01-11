@@ -12,6 +12,7 @@ const myFavoriteFootballTeam = {
   isWorldCupWinner: true,
   headCoach: {
     coachName: "Carlos Bilardo",
-    matches: 7,
+    matches: 7
   },
+  players: [],
 };
