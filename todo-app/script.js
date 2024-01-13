@@ -122,7 +122,7 @@ const myTaskArr = [
   { task: "Watch football", date: "10-08-2021" },
 ];
 
-localStorage.removeItem("data");
+localStorage.clear();
 
 localStorage.setItem("data", JSON.stringify(myTaskArr));
 const getTaskArr = localStorage.getItem("data");
