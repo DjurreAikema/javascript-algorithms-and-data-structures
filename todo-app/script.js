@@ -57,7 +57,7 @@ taskForm.addEventListener("submit", (e) => {
     `;
   });
 
-  taskForm.classList.toggle("hidden");
+  reset();
 });
 
 const reset = () => {
