@@ -7,3 +7,5 @@ const checkUserInput = () => {
 };
 
 convertBtn.addEventListener("click", checkUserInput);
+
+numberInput.addEventListener("keydown", () => {});
