@@ -4,6 +4,7 @@ const result = document.getElementById("result");
 
 const checkUserInput = () => {
   if (!numberInput.value || isNaN(parseInt(numberInput.value))) {
+    alert("Please provide a decimal number");
   }
 };
 
