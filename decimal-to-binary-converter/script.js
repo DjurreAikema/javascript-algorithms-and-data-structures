@@ -34,3 +34,6 @@ const decimalToBinary = (input) => {
 
   result.innerText = binary;
 };
+
+
+const countdown = (number) => {};
