@@ -21,5 +21,5 @@ numberInput.addEventListener("keydown", (e) => {
 });
 
 const decimalToBinary = (input) => {
-  return "1010";
+  return "01110110";
 };
