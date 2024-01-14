@@ -45,3 +45,5 @@ const countdown = (number) => {
     countdown(number - 1);
   }
 };
+
+countdown(3);
