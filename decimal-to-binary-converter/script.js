@@ -27,7 +27,10 @@ const decimalToBinary = (input) => {
 
   while (input > 0) {
     const quotient = Math.floor(input / 2);
+    quotients.push(quotient);
+
     const remainder = input % 2;
+    remainders.push(remainder);
 
     inputs.push(input);
     input = quotient;
