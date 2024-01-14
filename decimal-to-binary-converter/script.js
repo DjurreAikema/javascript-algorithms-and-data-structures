@@ -34,3 +34,7 @@ const decimalToBinary = (input) => {
 
   result.innerText = binary;
 };
+
+const a = () => {
+  return "freeCodeCamp " + b();
+};
