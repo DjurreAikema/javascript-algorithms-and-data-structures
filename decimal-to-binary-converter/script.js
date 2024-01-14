@@ -43,6 +43,11 @@ const animationData = [
     marginTop: 300,
     addElDelay: 1000,
   },
+  {
+    inputVal: 2,
+    marginTop: -200,
+    addElDelay: 1500,
+  },
 ];
 
 const showAnimation = () => {
