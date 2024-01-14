@@ -21,9 +21,10 @@ numberInput.addEventListener("keydown", (e) => {
 });
 
 const decimalToBinary = (input) => {
-    const inputs = [];
-    const quotients = [];
-    const remainders = [];
+  const inputs = [];
+  const quotients = [];
+  const remainders = [];
 
-    input = 0;
+  input = 0;
+  while (input > 0) {}
 };
