@@ -56,4 +56,6 @@ const animationData = [
   },
 ];
 
-const showAnimation = () => {};
+const showAnimation = () => {
+  result.innerText = "Call Stack Animation";
+};
