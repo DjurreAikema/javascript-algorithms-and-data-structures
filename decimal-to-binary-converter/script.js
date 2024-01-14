@@ -38,3 +38,11 @@ const decimalToBinary = (input) => {
 const a = () => {
   return "freeCodeCamp " + b();
 };
+
+const b = () => {
+  return "is " + c();
+};
+
+const c = () => {
+  return "awesome!";
+};
