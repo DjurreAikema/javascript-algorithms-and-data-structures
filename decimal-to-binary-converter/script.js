@@ -37,6 +37,7 @@ const decimalToBinary = (input) => {
 
 
 // --- Animation
+const animationContainer = document.getElementById("animation-container");
 const animationData = [
   {
     inputVal: 5,
