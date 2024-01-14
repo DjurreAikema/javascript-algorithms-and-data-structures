@@ -20,4 +20,6 @@ numberInput.addEventListener("keydown", (e) => {
   }
 });
 
-const decimalToBinary = (input) => {};
+const decimalToBinary = (input) => {
+  if (input === 0) return "";
+};
