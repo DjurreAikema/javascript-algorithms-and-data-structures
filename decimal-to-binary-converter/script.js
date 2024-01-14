@@ -35,6 +35,10 @@ const decimalToBinary = (input) => {
   }
 };
 
+
+// --- Animation
+const animationData = [];
+
 const showAnimation = () => {
   setTimeout(() => {
     console.log("free");
