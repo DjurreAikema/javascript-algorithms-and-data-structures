@@ -46,3 +46,5 @@ const b = () => {
 const c = () => {
   return "awesome!";
 };
+
+console.log(a());
