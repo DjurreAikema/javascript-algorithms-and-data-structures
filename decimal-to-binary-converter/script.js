@@ -39,7 +39,7 @@ const decimalToBinary = (input) => {
 // Learn recursion
 const callStack = [
   'a(): returns "freeCodeCamp " + b()',
-  'b(): returns "is " + c()',
+  'b(): returns "is " + "awesome!"',
 ];
 
 const a = () => {
