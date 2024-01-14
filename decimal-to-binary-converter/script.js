@@ -78,7 +78,7 @@ const showAnimation = () => {
     }, obj.addElDelay);
 
     setTimeout(() => {
-      document.getElementById(obj.inputVal);
+      document.getElementById(obj.inputVal).textContent = obj.msg;
     }, obj.showMsgDelay);
   });
 };
