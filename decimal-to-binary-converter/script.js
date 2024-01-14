@@ -22,4 +22,6 @@ numberInput.addEventListener("keydown", (e) => {
 
 const decimalToBinary = (input) => {
   let binary = "";
+
+  result.innerText = binary;
 };
