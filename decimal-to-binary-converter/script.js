@@ -21,29 +21,5 @@ numberInput.addEventListener("keydown", (e) => {
 });
 
 const decimalToBinary = (input) => {
-  const inputs = [];
-  const quotients = [];
-  const remainders = [];
-
-  if (input === 0) {
-    result.innerText = "0";
-    return;
-  }
-
-  while (input > 0) {
-    const quotient = Math.floor(input / 2);
-    quotients.push(quotient);
-
-    const remainder = input % 2;
-    remainders.push(remainder);
-
-    inputs.push(input);
-    input = quotient;
-  }
-
-  console.log("Inputs: ", inputs);
-  console.log("Quotients: ", quotients);
-  console.log("Remainders: ", remainders);
-
-  result.innerHTML = remainders.reverse().join("");
+  let binary = "";
 };
