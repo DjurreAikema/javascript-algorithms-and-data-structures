@@ -16,3 +16,5 @@ numberInput.addEventListener("keydown", (e) => {
     checkUserInput();
   }
 });
+
+const decimalToBinary = (input) => {};
