@@ -35,6 +35,10 @@ const decimalToBinary = (input) => {
   result.innerText = binary;
 };
 
+
+// Learn recursion
+const callStack = [];
+
 const a = () => {
   return "freeCodeCamp " + b();
 };
