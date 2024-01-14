@@ -58,4 +58,6 @@ const animationData = [
 
 const showAnimation = () => {
   result.innerText = "Call Stack Animation";
+
+  animationData.forEach((obj) => {});
 };
