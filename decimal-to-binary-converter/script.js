@@ -37,7 +37,13 @@ const decimalToBinary = (input) => {
 
 
 // --- Animation
-const animationData = [];
+const animationData = [
+  {
+    inputVal: 5,
+    marginTop: 300,
+    addElDelay: 1000,
+  },
+];
 
 const showAnimation = () => {
   setTimeout(() => {
