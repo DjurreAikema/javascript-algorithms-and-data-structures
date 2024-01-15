@@ -20,3 +20,6 @@ const updateUI = (array = []) => {
     outputValueNode.innerText = num;
   });
 };
+
+
+const bubbleSort = (array) => {};
