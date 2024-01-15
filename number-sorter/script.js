@@ -10,3 +10,6 @@ const sortInputArray = (event) => {
 };
 
 sortButton.addEventListener("click", sortInputArray);
+
+
+const updateUI = (array = []) => {};
