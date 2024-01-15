@@ -10,7 +10,8 @@ const sortInputArray = (event) => {
 
   // const sortedValues = bubbleSort(inputValues);
   // const sortedValues = selectionSort(inputValues);
-  const sortedValues = insertionSort(inputValues);
+  // const sortedValues = insertionSort(inputValues);
+  const sortedValues = inputValues.sort();
 
   updateUI(sortedValues);
 };
