@@ -11,7 +11,9 @@ const sortInputArray = (event) => {
   // const sortedValues = bubbleSort(inputValues);
   // const sortedValues = selectionSort(inputValues);
   // const sortedValues = insertionSort(inputValues);
-  const sortedValues = inputValues.sort((a, b) => {});
+  const sortedValues = inputValues.sort((a, b) => {
+    return a - b;
+  });
 
   updateUI(sortedValues);
 };
