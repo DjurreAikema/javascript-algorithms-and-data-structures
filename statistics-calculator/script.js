@@ -9,4 +9,5 @@ const calculate = () => {
     .filter((el) => !Number.isNaN(el));
 
   const mean = getMean(numbers);
+  document.querySelector("#mean").textContent = mean;
 };
