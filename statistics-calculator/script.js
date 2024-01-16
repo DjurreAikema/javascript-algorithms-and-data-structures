@@ -3,7 +3,7 @@ const getMean = (array) =>
 
 
 const getMedian = (array) => {
-  const sorted = array.sort();
+  const sorted = array.sort((a, b) => a - b);
 };
 
 
