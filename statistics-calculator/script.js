@@ -22,4 +22,7 @@ const calculate = () => {
 
   const mean = getMean(numbers);
   document.querySelector("#mean").textContent = mean;
+
+  const median = getMedian(numbers);
+  document.querySelector("#median").textContent = median;
 };
