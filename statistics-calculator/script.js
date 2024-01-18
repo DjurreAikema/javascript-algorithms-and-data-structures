@@ -36,14 +36,12 @@ const getRange = (array) => {
 
 const getVariance = (array) => {
   const mean = getMean(array);
-  // const differences = array.map((el) => el - mean);
-  // const squaredDifferences = differences.map((el) => el ** 2);
-  // const sumSquaredDifferences = squaredDifferences.reduce(
-  // (acc, el) => acc + el,
-  // 0
-  // );
 
-  const variance = array.reduce((acc, el) => {}, 0);
+  const variance = array.reduce((acc, el) => {
+    const difference = el - mean;
+    const squared = difference ** 2;
+    return acc + squared;
+  }, 0);
 };
 
 
