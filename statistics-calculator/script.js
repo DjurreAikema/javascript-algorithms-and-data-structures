@@ -49,4 +49,7 @@ const calculate = () => {
 
   const mode = getMode(numbers);
   document.querySelector("#mode").textContent = mode;
+
+  const range = getRange(numbers);
+  document.querySelector("#range").textContent = range;
 };
