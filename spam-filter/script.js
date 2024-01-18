@@ -17,4 +17,4 @@ checkMessageButton.addEventListener("click", () => {
   messageInput.value = "";
 });
 
-const isSpam = (msg) => false;
+const isSpam = (msg) => msg.match(helpRegex);
