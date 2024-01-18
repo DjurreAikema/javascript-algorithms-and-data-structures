@@ -66,4 +66,7 @@ const calculate = () => {
 
   const range = getRange(numbers);
   document.querySelector("#range").textContent = range;
+
+  const variance = getVariance(numbers);
+  document.querySelector("#variance").textContent = variance;
 };
