@@ -41,4 +41,7 @@ const calculate = () => {
 
   const median = getMedian(numbers);
   document.querySelector("#median").textContent = median;
+
+  const mode = getMode(numbers);
+  document.querySelector("#mode").textContent = mode;
 };
