@@ -6,7 +6,7 @@ const helpRegex = /please help|assist me/i;
 
 const denyList = [helpRegex];
 
-const isSpam = (msg) => helpRegex.test(msg);
+const isSpam = (msg) => denyList.some((regex) => regex.test(msg));
 
 checkMessageButton.addEventListener("click", () => {
   if (messageInput.value === "") {
