@@ -22,7 +22,9 @@ const getMode = (array) => {
 
   const highest = Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0];
 
-  const mode = Object.keys(counts);
+  const mode = Object.keys(counts).filter(
+    (el) => counts[el] === counts[highest]
+  );
 };
 
 
