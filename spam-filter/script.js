@@ -2,6 +2,8 @@ const result = document.getElementById("result");
 const messageInput = document.getElementById("message-input");
 const checkMessageButton = document.getElementById("check-message-btn");
 
+const helpRegex = /please help/;
+
 checkMessageButton.addEventListener("click", () => {
   if (messageInput.value === "") {
     alert("Please enter a message.");
