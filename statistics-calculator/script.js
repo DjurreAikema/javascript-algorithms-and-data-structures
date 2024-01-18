@@ -34,6 +34,11 @@ const getRange = (array) => {
 };
 
 
+const getVariance = (array) => {
+  const mean = getMean(array);
+};
+
+
 const calculate = () => {
   const value = document.querySelector("#numbers").value;
   const array = value.split(/,\s*/g);
