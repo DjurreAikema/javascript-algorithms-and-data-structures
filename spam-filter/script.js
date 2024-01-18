@@ -4,6 +4,10 @@ const checkMessageButton = document.getElementById("check-message-btn");
 
 const helpRegex = /please help|assist me/i;
 
+const denyList = [helpRegex];
+
+const isSpam = (msg) => helpRegex.test(msg);
+
 checkMessageButton.addEventListener("click", () => {
   if (messageInput.value === "") {
     alert("Please enter a message.");
@@ -16,5 +20,3 @@ checkMessageButton.addEventListener("click", () => {
 
   messageInput.value = "";
 });
-
-const isSpam = (msg) => helpRegex.test(msg);
