@@ -2,7 +2,7 @@ const result = document.getElementById("result");
 const messageInput = document.getElementById("message-input");
 const checkMessageButton = document.getElementById("check-message-btn");
 
-const helpRegex = /please help/i;
+const helpRegex = /please help|assist me/i;
 
 checkMessageButton.addEventListener("click", () => {
   if (messageInput.value === "") {
