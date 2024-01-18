@@ -3,6 +3,7 @@ const messageInput = document.getElementById("message-input");
 const checkMessageButton = document.getElementById("check-message-btn");
 
 const helpRegex = /please help|assist me/i;
+const dollarRegex = /dollars/i;
 
 const denyList = [helpRegex];
 
