@@ -76,4 +76,7 @@ const calculate = () => {
 
   const variance = getVariance(numbers);
   document.querySelector("#variance").textContent = variance;
+
+  const standardDeviation = getStandardDeviation(numbers);
+  document.querySelector("#standardDeviation").textContent = standardDeviation;
 };
