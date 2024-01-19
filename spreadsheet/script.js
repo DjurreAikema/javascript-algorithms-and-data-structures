@@ -4,6 +4,9 @@ const sum = (nums) => nums.reduce((acc, num) => acc + num, 0);
 const isEven = (num) => (num % 2 === 0 ? true : false);
 
 
+const average = (nums) => sum(nums) / nums.length;
+
+
 const range = (start, end) =>
   Array(end - start + 1)
     .fill(start)
