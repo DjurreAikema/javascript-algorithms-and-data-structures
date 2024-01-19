@@ -4,7 +4,7 @@ const range = (start, end) =>
     .map((element, index) => element + index);
 
 
-const charRange = (start, end) => range(start, end);
+const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0));
 
 
 window.onload = () => {
