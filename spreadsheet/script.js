@@ -22,4 +22,5 @@ window.onload = () => {
   };
 
   const letters = charRange("A", "J");
+  letters.forEach(createLabel);
 };
