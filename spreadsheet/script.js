@@ -1,6 +1,9 @@
 const sum = (nums) => nums.reduce((acc, num) => acc + num, 0);
 const isEven = (num) => (num % 2 === 0 ? true : false);
 const average = (nums) => sum(nums) / nums.length;
+const median = (nums) => {
+  const sorted = nums.slice().sort((a, b) => a - b);
+};
 
 const range = (start, end) =>
   Array(end - start + 1)
