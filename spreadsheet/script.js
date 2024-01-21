@@ -25,6 +25,13 @@ const charRange = (start, end) =>
   );
 
 
+const spreadsheetFunctions = {
+  sum,
+  average,
+  median,
+};
+
+
 window.onload = () => {
   const container = document.getElementById("container");
 
