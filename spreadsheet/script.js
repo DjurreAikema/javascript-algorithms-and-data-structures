@@ -1,8 +1,13 @@
 const sum = (nums) => nums.reduce((acc, num) => acc + num, 0);
+
 const isEven = (num) => (num % 2 === 0 ? true : false);
+
 const average = (nums) => sum(nums) / nums.length;
+
 const median = (nums) => {
   const sorted = nums.slice().sort((a, b) => a - b);
+  const length = sorted.length;
+  const middle = length / 2 - 1;
 };
 
 const range = (start, end) =>
@@ -14,6 +19,7 @@ const charRange = (start, end) =>
   range(start.charCodeAt(0), end.charCodeAt(0)).map((code) =>
     String.fromCharCode(code)
   );
+
 
 window.onload = () => {
   const container = document.getElementById("container");
