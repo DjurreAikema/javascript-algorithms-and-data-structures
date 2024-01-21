@@ -24,6 +24,8 @@ const charRange = (start, end) =>
     String.fromCharCode(code)
   );
 
+const evalFormula = (x, cells) => {};
+
 
 const spreadsheetFunctions = {
   sum,
