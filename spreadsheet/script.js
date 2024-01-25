@@ -31,7 +31,10 @@ const evalFormula = (x, cells) => {
   const elemValue = (num) => (character) => idToText(character + num);
   const addCharacters = (character1) => (character2) => (num) =>
     charRange(character1, character2).map(elemValue(num));
-  const rangeExpanded = x.replace(rangeRegex, (match) => {});
+  const rangeExpanded = x.replace(
+    rangeRegex,
+    (match, char1, num1, char2, num2) => {}
+  );
 };
 
 
