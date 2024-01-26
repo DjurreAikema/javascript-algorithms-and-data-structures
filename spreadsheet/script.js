@@ -53,6 +53,7 @@ const spreadsheetFunctions = {
   sum,
   average,
   median,
+  even: (nums) => nums.filter(isEven),
 };
 
 const applyFunction = (str) => {
