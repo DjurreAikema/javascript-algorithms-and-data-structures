@@ -58,7 +58,7 @@ const applyFunction = (str) => {
   const functionCall = /([a-z]*)\(([0-9., ]*)\)(?!.*\()/i;
 
   const toNumberList = (args) => args.split(",").map(parseFloat);
-  const apply = (fn, args) => {};
+  const apply = (fn, args) => spreadsheetFunctions[fn.toLowerCase()];
 };
 
 window.onload = () => {
