@@ -51,6 +51,8 @@ const spreadsheetFunctions = {
   median,
 };
 
+const applyFunction = (str) => {};
+
 window.onload = () => {
   const container = document.getElementById("container");
 
