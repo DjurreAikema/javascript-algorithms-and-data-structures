@@ -54,14 +54,15 @@ const spreadsheetFunctions = {
   average,
   median,
   even: (nums) => nums.filter(isEven),
-  someeven: (nums) => nums.some((num) => isEven(num)),
-  everyeven: (nums) => nums.every((num) => isEven(num)),
+  someeven: (nums) => nums.some(isEven),
+  everyeven: (nums) => nums.every(isEven),
   firsttwo: (nums) => nums.slice(0, 2),
   lasttwo: (nums) => nums.slice(-2),
   has2: (nums) => nums.includes(2),
   increment: (nums) => nums.map((num) => num + 1),
-  random: (nums) => Math.floor(Math.random() * (nums[1] - nums[0]) + nums[0]),
-  range: (nums) => range(nums[0], nums[1]),
+  random: ([x, y]) => Math.floor(Math.random() * y + x),
+  range: (nums) => range(...nums),
+  nodupes: (nums) => [...new Set(nums)],
 };
 
 const applyFunction = (str) => {
