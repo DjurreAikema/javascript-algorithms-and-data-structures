@@ -61,6 +61,7 @@ const spreadsheetFunctions = {
   has2: (nums) => nums.includes(2),
   increment: (nums) => nums.map((num) => num + 1),
   random: (nums) => Math.floor(Math.random() * (nums[1] - nums[0]) + nums[0]),
+  range: (nums) => range(nums[0], nums[1]),
 };
 
 const applyFunction = (str) => {
