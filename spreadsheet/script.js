@@ -51,7 +51,9 @@ const spreadsheetFunctions = {
   median,
 };
 
-const applyFunction = (str) => {};
+const applyFunction = (str) => {
+  const noHigh = highPrecedence(str);
+};
 
 window.onload = () => {
   const container = document.getElementById("container");
