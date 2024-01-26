@@ -6,4 +6,5 @@ convertBtn.addEventListener("click", () => {
   const value = numberInput.value;
 
   if (!value) output.innerText = "Please enter a valid number";
+  if (value < 1) output.innerText = "Please enter a number greater than or equal to 1";
 });
