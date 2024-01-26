@@ -103,6 +103,6 @@ const update = (event) => {
   const value = element.value.replace(/\s/g, "");
 
   if (!value.includes(element.id) && value.startsWith("=")) {
-    element.value = evalFormula();
+    element.value = evalFormula(value.slice(1));
   }
 };
