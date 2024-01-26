@@ -60,7 +60,9 @@ const applyFunction = (str) => {
   const toNumberList = (args) => args.split(",").map(parseFloat);
   const apply = (fn, args) => spreadsheetFunctions[fn.toLowerCase()](toNumberList(args));
 
-  return str2.replace(functionCall, (match, fn, args) => spreadsheetFunctions.hasOwnProperty(fn.toLowerCase()));
+  return str2.replace(functionCall, (match, fn, args) =>
+    spreadsheetFunctions.hasOwnProperty(fn.toLowerCase()) ? apply(fn, args) : match
+  );
 };
 
 window.onload = () => {

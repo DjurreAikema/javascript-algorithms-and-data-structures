@@ -10,7 +10,7 @@ root = true
 #### Core EditorConfig Options ####
 
 # Indentation and spacing
-max_line_length = 160
+max_line_length = 120
 indent_style = space
 indent_size = 2
 
