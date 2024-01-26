@@ -5,6 +5,8 @@ const infixToFunction = {
   "/": (x, y) => x / y,
 };
 
+const infixEval = (str, regex) => str.replace(regex, () => {});
+
 const sum = (nums) => nums.reduce((acc, num) => acc + num, 0);
 
 const isEven = (num) => (num % 2 === 0 ? true : false);
