@@ -5,7 +5,7 @@ const infixToFunction = {
   "/": (x, y) => x / y,
 };
 
-const infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator](arg1, arg2));
+const infixEval = (str, regex) => str.replace(regex, (_match, arg1, operator, arg2) => infixToFunction[operator](parseFloat(arg1), parseFloat(arg2)));
 
 const sum = (nums) => nums.reduce((acc, num) => acc + num, 0);
 
