@@ -1,3 +1,5 @@
+const infixToFunction = {};
+
 const sum = (nums) => nums.reduce((acc, num) => acc + num, 0);
 
 const isEven = (num) => (num % 2 === 0 ? true : false);
@@ -9,9 +11,7 @@ const median = (nums) => {
   const length = sorted.length;
   const middle = length / 2 - 1;
 
-  return isEven(length)
-    ? average([sorted[middle], sorted[middle + 1]])
-    : sorted[Math.ceil(middle)];
+  return isEven(length) ? average([sorted[middle], sorted[middle + 1]]) : sorted[Math.ceil(middle)];
 };
 
 const range = (start, end) =>
@@ -19,10 +19,7 @@ const range = (start, end) =>
     .fill(start)
     .map((element, index) => element + index);
 
-const charRange = (start, end) =>
-  range(start.charCodeAt(0), end.charCodeAt(0)).map((code) =>
-    String.fromCharCode(code)
-  );
+const charRange = (start, end) => range(start.charCodeAt(0), end.charCodeAt(0)).map((code) => String.fromCharCode(code));
 
 const evalFormula = (x, cells) => {
   const idToText = (id) => cells.find((cell) => cell.id === id).value;
@@ -35,13 +32,11 @@ const evalFormula = (x, cells) => {
   const cellExpanded = rangeExpanded.replace(cellRegex, (match) => idToText(match.toUpperCase()));
 };
 
-
 const spreadsheetFunctions = {
   sum,
   average,
   median,
 };
-
 
 window.onload = () => {
   const container = document.getElementById("container");
@@ -71,7 +66,6 @@ window.onload = () => {
     });
   });
 };
-
 
 const update = (event) => {
   const element = event.target;
