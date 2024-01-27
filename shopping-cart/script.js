@@ -11,4 +11,11 @@ const showHideCartSpan = document.getElementById("show-hide-cart");
 
 let isCartShowing = false;
 
-const products = [];
+const products = [
+  {
+    id: 1,
+    name: "Vanilla Cupcakes (6 Pack)",
+    price: 12.99,
+    category: "Cupcake",
+  },
+];
