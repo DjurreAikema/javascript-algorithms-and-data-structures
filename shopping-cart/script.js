@@ -8,6 +8,7 @@ const cartSubTotal = document.getElementById("subtotal");
 const cartTaxes = document.getElementById("taxes");
 const cartTotal = document.getElementById("total");
 const showHideCartSpan = document.getElementById("show-hide-cart");
+const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 
 let isCartShowing = false;
 
@@ -125,6 +126,6 @@ class ShoppingCart {
         </div>
       `);
   }
-};
+}
 
 const cart = new ShoppingCart();
