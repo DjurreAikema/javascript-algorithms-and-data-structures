@@ -130,4 +130,4 @@ class ShoppingCart {
 
 const cart = new ShoppingCart();
 
-[...addToCartBtns].forEach();
+[...addToCartBtns].forEach((btn) => btn.addEventListener("click", (event) => {}));
