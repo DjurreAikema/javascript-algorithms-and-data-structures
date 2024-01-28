@@ -134,4 +134,6 @@ const cart = new ShoppingCart();
   btn.addEventListener("click", (event) => cart.addItem(Number(event.target.id), products))
 );
 
-cartBtn.addEventListener("click", () => {});
+cartBtn.addEventListener("click", () => {
+  isCartShowing = !isCartShowing;
+});
