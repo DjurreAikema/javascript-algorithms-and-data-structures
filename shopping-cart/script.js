@@ -139,6 +139,8 @@ class ShoppingCart {
     cartSubTotal.textContent = `$${subTotal.toFixed(2)}`;
     cartTaxes.textContent = `$${tax.toFixed(2)}`;
     cartTotal.textContent = `$${this.total.toFixed(2)}`;
+
+    return this.total;
   }
 
   calculateTaxes(amount) {
