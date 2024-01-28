@@ -135,7 +135,10 @@ class ShoppingCart {
 const cart = new ShoppingCart();
 
 [...addToCartBtns].forEach((btn) =>
-  btn.addEventListener("click", (event) => cart.addItem(Number(event.target.id), products))
+  btn.addEventListener("click", (event) => {
+    cart.addItem(Number(event.target.id), products);
+    totalNumberOfItems.textContent = cart.getCounts();
+  })
 );
 
 cartBtn.addEventListener("click", () => {
