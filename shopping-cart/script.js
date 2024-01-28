@@ -109,5 +109,7 @@ class ShoppingCart {
     const { name, price } = product;
 
     this.items.push(product);
+
+    const totalCountPerProduct = {};
   }
 };
