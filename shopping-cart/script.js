@@ -136,4 +136,5 @@ const cart = new ShoppingCart();
 
 cartBtn.addEventListener("click", () => {
   isCartShowing = !isCartShowing;
+  showHideCartSpan.textContent = isCartShowing ? "Hide" : "Show";
 });
