@@ -47,6 +47,8 @@ class Player {
         this.position.y = 0;
         this.velocity.y = gravity;
       }
+
+      this.velocity.y += gravity;
     }
   }
 }
