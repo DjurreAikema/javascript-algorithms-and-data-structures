@@ -68,3 +68,5 @@ const startGame = () => {
 
   player.draw();
 };
+
+startBtn.addEventListener("click", startGame);
