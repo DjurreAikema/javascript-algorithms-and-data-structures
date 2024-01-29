@@ -126,6 +126,11 @@ const animate = () => {
       player.position.x >= platform.position.x - player.width / 2,
       player.position.x <= platform.position.x + platform.width - player.width / 3,
     ];
+
+    if (collisionDetectionRules.every((platform) => platform)) {
+      player.velocity.y = 0;
+      return;
+    }
   });
 };
 
