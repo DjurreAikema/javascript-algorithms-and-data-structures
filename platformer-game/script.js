@@ -77,6 +77,7 @@ const animate = () => {
   player.update();
 
   if (keys.rightKey.pressed && player.position.x < 400) {
+    player.velocity.x = 5;
   }
 };
 
