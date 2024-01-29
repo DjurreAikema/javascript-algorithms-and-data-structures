@@ -30,4 +30,6 @@ class Player {
     this.width = 40;
     this.height = 40;
   }
+
+  draw() {}
 }
