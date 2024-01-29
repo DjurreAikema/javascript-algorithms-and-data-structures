@@ -71,4 +71,6 @@ const startGame = () => {
 
 startBtn.addEventListener("click", startGame);
 
-const animate = () => {};
+const animate = () => {
+  requestAnimationFrame(animate);
+};
