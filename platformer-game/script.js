@@ -62,7 +62,7 @@ class Player {
 
 // Platform class
 class Platform {
-
+  constructor(x, y) {}
 }
 
 
