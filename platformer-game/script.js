@@ -89,3 +89,5 @@ const keys = {
   rightKey: { pressed: false },
   leftKey: { pressed: false },
 };
+
+const movePlayer = (key, xVelocity, isPressed) => {};
