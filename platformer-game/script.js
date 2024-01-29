@@ -92,6 +92,8 @@ const platformPositions = [
   { x: 4700, y: 150 },
 ];
 
+const platforms = platformPositions.map();
+
 const animate = () => {
   requestAnimationFrame(animate);
   ctx.clearRect(0, 0, canvas.width, canvas.height);
