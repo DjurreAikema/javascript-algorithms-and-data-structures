@@ -62,16 +62,6 @@ class Player {
 
 const player = new Player();
 
-const startGame = () => {
-  canvas.style.display = "block";
-  startScreen.style.display = "none";
-
-  player.draw();
-};
-
-startBtn.addEventListener("click", startGame);
-window.addEventListener("keydown", ({ key }) => {});
-
 const animate = () => {
   requestAnimationFrame(animate);
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -115,3 +105,13 @@ const movePlayer = (key, xVelocity, isPressed) => {
       player.velocity.x += xVelocity;
   }
 };
+
+const startGame = () => {
+  canvas.style.display = "block";
+  startScreen.style.display = "none";
+
+  player.draw();
+};
+
+startBtn.addEventListener("click", startGame);
+window.addEventListener("keydown", ({ key }) => {});
