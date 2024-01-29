@@ -108,6 +108,9 @@ const animate = () => {
   } else {
     player.velocity.x = 0;
   }
+
+  if (keys.rightKey.pressed && isCheckpointCollisionDetectionActive) {
+  }
 };
 
 const keys = {
