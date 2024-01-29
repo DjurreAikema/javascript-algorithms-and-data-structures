@@ -90,4 +90,7 @@ const keys = {
   leftKey: { pressed: false },
 };
 
-const movePlayer = (key, xVelocity, isPressed) => {};
+const movePlayer = (key, xVelocity, isPressed) => {
+  if (!isCheckpointCollisionDetectionActive) {
+  }
+};
