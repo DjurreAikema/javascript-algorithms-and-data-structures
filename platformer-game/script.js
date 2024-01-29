@@ -7,4 +7,4 @@ const checkpointMessage = document.querySelector(".checkpoint-screen > p");
 
 const ctx = canvas.getContext("2d");
 
-canvas.append(canvas.width);
+canvas.width = innerWidth;
