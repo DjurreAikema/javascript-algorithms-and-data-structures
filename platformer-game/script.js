@@ -77,7 +77,10 @@ class Platform {
 
 const player = new Player();
 
-const platformPositions = [{ x: 500, y: 450 }];
+const platformPositions = [
+  { x: 500, y: 450 },
+  { x: 700, y: 400 },
+];
 
 const animate = () => {
   requestAnimationFrame(animate);
