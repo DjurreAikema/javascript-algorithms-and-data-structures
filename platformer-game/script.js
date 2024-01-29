@@ -18,5 +18,5 @@ let isCheckpointCollisionDetectionActive = true;
 
 // Player class
 class Player {
-
+  constructor() {}
 }
