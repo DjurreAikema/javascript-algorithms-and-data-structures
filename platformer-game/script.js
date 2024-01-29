@@ -14,3 +14,9 @@ canvas.height = innerHeight;
 // Game variables
 const gravity = 0.5;
 let isCheckpointCollisionDetectionActive = true;
+
+
+// Player class
+class Player {
+
+}
