@@ -70,6 +70,7 @@ const startGame = () => {
 };
 
 startBtn.addEventListener("click", startGame);
+window.addEventListener("keydown", ({ key }) => {});
 
 const animate = () => {
   requestAnimationFrame(animate);
@@ -110,9 +111,7 @@ const movePlayer = (key, xVelocity, isPressed) => {
       break;
     case "ArrowRight":
       keys.rightKey.pressed = isPressed;
-      if (xVelocity === 0) {
-        player.velocity.x = xVelocity;
-      }
+      if (xVelocity === 0) player.velocity.x = xVelocity;
       player.velocity.x += xVelocity;
   }
 };
