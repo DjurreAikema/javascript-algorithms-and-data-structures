@@ -132,7 +132,7 @@ const animate = () => {
       return;
     }
 
-    const platformDetectionRules = [];
+    const platformDetectionRules = [player.position.x >= platform.position.x - player.width / 2];
   });
 };
 
