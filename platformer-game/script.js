@@ -119,7 +119,9 @@ const animate = () => {
     });
   }
 
-  platforms.forEach((platform) => {});
+  platforms.forEach((platform) => {
+    const collisionDetectionRules = [player.position.y + player.height <= platform.position.y];
+  });
 };
 
 const keys = {
