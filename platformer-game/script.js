@@ -31,5 +31,7 @@ class Player {
     this.height = 40;
   }
 
-  draw() {}
+  draw() {
+    ctx.fillStyle = "#99c9ff";
+  }
 }
