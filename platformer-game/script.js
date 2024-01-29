@@ -60,6 +60,12 @@ class Player {
 }
 
 
+// Platform class
+class Platform {
+
+}
+
+
 const player = new Player();
 
 const animate = () => {
