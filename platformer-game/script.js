@@ -67,6 +67,8 @@ class Platform {
     this.width = 200;
     this.height = 40;
   }
+
+  draw() {}
 }
 
 
