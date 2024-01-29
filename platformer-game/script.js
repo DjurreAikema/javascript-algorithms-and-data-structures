@@ -27,5 +27,7 @@ class Player {
       x: 0,
       y: 0,
     };
+    this.width = 40;
+    this.height = 40;
   }
 }
