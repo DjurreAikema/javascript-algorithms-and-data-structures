@@ -184,7 +184,9 @@ const animate = () => {
     }
   });
 
-  checkpoints.forEach((checkpoint, index) => {});
+  checkpoints.forEach((checkpoint, index) => {
+    const checkpointDetectionRules = [player.position.x >= checkpoint.position.x];
+  });
 };
 
 const keys = {
