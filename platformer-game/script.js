@@ -150,7 +150,7 @@ const animate = () => {
     });
   } else if (keys.leftKey.pressed && isCheckpointCollisionDetectionActive) {
     platforms.forEach((platform) => {
-      platform.position.x += 5
+      platform.position.x += 5;
     });
 
     checkpoints.forEach((checkpoint) => {
@@ -183,6 +183,8 @@ const animate = () => {
       player.velocity.y = gravity;
     }
   });
+
+  checkpoints.forEach((checkpoint, index) => {});
 };
 
 const keys = {
