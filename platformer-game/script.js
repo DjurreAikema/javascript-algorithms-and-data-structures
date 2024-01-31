@@ -130,6 +130,7 @@ const animate = () => {
   player.update();
 
   platforms.forEach((platform) => platform.draw());
+  checkpoints.forEach((checkpoint) => checkpoint.draw());
 
   if (keys.rightKey.pressed && player.position.x < 400) {
     player.velocity.x = 5;
