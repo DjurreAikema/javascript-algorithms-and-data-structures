@@ -115,6 +115,13 @@ const platformPositions = [
 
 const platforms = platformPositions.map((platform) => new Platform(platform.x, platform.y));
 
+const checkpointPositions = [
+  { x: 1170, y: 80 },
+  { x: 2900, y: 330 },
+  { x: 4800, y: 80 },
+];
+
+
 const animate = () => {
   requestAnimationFrame(animate);
   ctx.clearRect(0, 0, canvas.width, canvas.height);
