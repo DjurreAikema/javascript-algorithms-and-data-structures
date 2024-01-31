@@ -77,7 +77,9 @@ class Platform {
 
 // Checkpoint class
 class CheckPoint {
-  constructor(x, y) {}
+  constructor(x, y) {
+    this.position = { x, y };
+  }
 }
 
 
