@@ -152,6 +152,10 @@ const animate = () => {
     platforms.forEach((platform) => {
       platform.position.x += 5
     });
+
+    checkpoints.forEach((checkpoint) => {
+      checkpoint.position.x += 5;
+    });
   }
 
   platforms.forEach((platform) => {
