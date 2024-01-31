@@ -225,6 +225,10 @@ const startGame = () => {
 const showCheckpointScreen = (msg) => {
   checkpointScreen.style.display = "block";
   checkpointMessage.textContent = msg;
+
+  if (isCheckpointCollisionDetectionActive) {
+    setTimeout(() => (checkpointScreen.style.display = "none"), 2000);
+  }
 };
 
 startBtn.addEventListener("click", startGame);
