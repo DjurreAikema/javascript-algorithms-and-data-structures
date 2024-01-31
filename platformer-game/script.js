@@ -178,7 +178,7 @@ const animate = () => {
       player.position.y <= platform.position.y + platform.height,
     ];
 
-    if (platformDetectionRules.every((platform) => platform)) {
+    if (platformDetectionRules.every((rule) => rule)) {
       player.position.y = platform.position.y + player.height;
       player.velocity.y = gravity;
     }
@@ -191,6 +191,9 @@ const animate = () => {
       player.position.y + player.height <= checkpoint.position.y + checkpoint.height,
       isCheckpointCollisionDetectionActive,
     ];
+
+    if (checkpointDetectionRules.every((rule) => rule)) {
+    }
   });
 };
 
