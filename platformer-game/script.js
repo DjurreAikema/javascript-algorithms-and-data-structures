@@ -79,6 +79,8 @@ class Platform {
 class CheckPoint {
   constructor(x, y) {
     this.position = { x, y };
+    this.width = 40;
+    this.height = 70;
   }
 }
 
