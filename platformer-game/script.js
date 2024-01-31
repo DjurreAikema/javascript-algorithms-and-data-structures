@@ -75,6 +75,12 @@ class Platform {
 }
 
 
+// Checkpoint class
+class CheckPoint {
+
+}
+
+
 const player = new Player();
 
 const platformPositions = [
