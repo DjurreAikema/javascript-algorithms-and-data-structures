@@ -77,7 +77,7 @@ class Platform {
 
 // Checkpoint class
 class CheckPoint {
-
+  constructor(x, y) {}
 }
 
 
