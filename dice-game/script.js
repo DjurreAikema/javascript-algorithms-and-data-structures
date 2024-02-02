@@ -90,5 +90,9 @@ const getHighestDuplicates = (arr) => {
     if (count >= 3 && count > highestCount) {
       highestCount = count;
     }
+
+    if (count >= 4 && count > highestCount) {
+      highestCount = count;
+    }
   }
 };
