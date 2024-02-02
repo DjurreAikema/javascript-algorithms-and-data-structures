@@ -83,4 +83,7 @@ const getHighestDuplicates = (arr) => {
   }
 
   let highestCount = 0;
+
+  for (let num of arr) {
+  }
 };
