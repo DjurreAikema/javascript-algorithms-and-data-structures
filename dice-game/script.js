@@ -52,6 +52,7 @@ rollDiceBtn.addEventListener("click", () => {
   } else {
     rolls++;
     rollDice();
+    updateStats();
   }
 });
 
