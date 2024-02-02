@@ -57,4 +57,7 @@ rollDiceBtn.addEventListener("click", () => {
 
 
 // Update stats
-const updateStats = () => {};
+const updateStats = () => {
+  currentRoundRollsText.textContent = rolls;
+  currentRoundText.textContent = round;
+};
