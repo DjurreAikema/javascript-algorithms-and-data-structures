@@ -41,5 +41,7 @@ const rollDice = () => {
     diceValuesArr.push(randomDice);
   }
 
-  listOfAllDice.forEach((dice, index) => {});
+  listOfAllDice.forEach((dice, index) => {
+    dice.textContent = diceValuesArr[index];
+  });
 };
