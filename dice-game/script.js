@@ -70,3 +70,5 @@ const updateRadioOption = (optionNode, score) => {
   scoreInputs[optionNode].value = score;
   scoreSpans[optionNode].textContent = `, score = ${score}`;
 };
+
+const getHighestDuplicates = (arr) => {};
