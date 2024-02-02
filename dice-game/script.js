@@ -87,12 +87,16 @@ const getHighestDuplicates = (arr) => {
   for (let num of arr) {
     const count = counts[num];
 
+    // Three of a kind
     if (count >= 3 && count > highestCount) {
       highestCount = count;
     }
 
+    // Four of a kind
     if (count >= 4 && count > highestCount) {
       highestCount = count;
     }
   }
+
+  const sumOfAllDice = diceValuesArr.reduce((a, b) => a + b, 0);
 };
