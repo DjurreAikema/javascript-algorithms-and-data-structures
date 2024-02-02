@@ -54,3 +54,7 @@ rollDiceBtn.addEventListener("click", () => {
     rollDice();
   }
 });
+
+
+// Update stats
+const updateStats = () => {};
