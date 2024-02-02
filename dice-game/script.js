@@ -30,3 +30,7 @@ rulesBtn.addEventListener("click", () => {
     rulesContainer.style.display = "none";
   }
 });
+
+
+// Roll dice algorithm
+const rollDice = () => {};
