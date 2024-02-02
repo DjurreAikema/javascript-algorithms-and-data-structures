@@ -62,3 +62,7 @@ const updateStats = () => {
   currentRoundRollsText.textContent = rolls;
   currentRoundText.textContent = round;
 };
+
+
+// Detect combinations
+const updateRadioOption = (optionNode, score) => {};
