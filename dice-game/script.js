@@ -16,3 +16,7 @@ let rolls = 0;
 let score = 0;
 let totalScore = 0;
 let round = 1;
+
+
+// Toggle rules
+rulesBtn.addEventListener("click", () => {})
