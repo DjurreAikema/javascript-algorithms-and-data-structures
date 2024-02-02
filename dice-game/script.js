@@ -65,4 +65,6 @@ const updateStats = () => {
 
 
 // Detect combinations
-const updateRadioOption = (optionNode, score) => {};
+const updateRadioOption = (optionNode, score) => {
+  scoreInputs[optionNode].disabled = false;
+};
