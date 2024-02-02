@@ -97,4 +97,5 @@ const getHighestDuplicates = (arr) => {
 
   if (highestCount >= 4) updateRadioOption(1, sumOfAllDice);
   if (highestCount >= 3) updateRadioOption(0, sumOfAllDice);
+  updateRadioOption(5, 0);
 };
