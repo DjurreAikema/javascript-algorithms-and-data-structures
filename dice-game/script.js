@@ -45,3 +45,5 @@ const rollDice = () => {
     dice.textContent = diceValuesArr[index];
   });
 };
+
+rollDiceBtn.addEventListener("click", () => {});
