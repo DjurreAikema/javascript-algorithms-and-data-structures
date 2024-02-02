@@ -11,3 +11,4 @@ const rulesContainer = document.querySelector(".rules-container");
 const rulesBtn = document.getElementById("rules-btn");
 
 let isModalShowing = false;
+let diceValuesArr = [];
