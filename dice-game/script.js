@@ -19,4 +19,6 @@ let round = 1;
 
 
 // Toggle rules
-rulesBtn.addEventListener("click", () => {})
+rulesBtn.addEventListener("click", () => {
+  isModalShowing = !isModalShowing;
+});
