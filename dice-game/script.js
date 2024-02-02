@@ -33,4 +33,6 @@ rulesBtn.addEventListener("click", () => {
 
 
 // Roll dice algorithm
-const rollDice = () => {};
+const rollDice = () => {
+  diceValuesArr = [];
+};
