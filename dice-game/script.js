@@ -84,6 +84,8 @@ const resetRadioOption = () => {
   });
 };
 
+const updateScore = (selectedValue, achieved) => {};
+
 const getHighestDuplicates = (arr) => {
   const counts = {};
 
