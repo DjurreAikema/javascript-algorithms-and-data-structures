@@ -73,7 +73,10 @@ const updateRadioOption = (optionNode, score) => {
 };
 
 const resetRadioOption = () => {
-  scoreInputs.forEach((input) => {});
+  scoreInputs.forEach((input) => {
+    input.disabled = true;
+    input.checked = false;
+  });
 };
 
 const getHighestDuplicates = (arr) => {
