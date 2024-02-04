@@ -31,6 +31,9 @@ rulesBtn.addEventListener("click", () => {
   }
 });
 
+// Keep score
+keepScoreBtn.addEventListener("click", () => {});
+
 
 // Roll dice algorithm
 const rollDice = () => {
