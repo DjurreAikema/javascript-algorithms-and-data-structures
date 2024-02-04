@@ -50,6 +50,8 @@ keepScoreBtn.addEventListener("click", () => {
     updateStats();
     resetRadioOption();
     updateScore(selectedValue, achieved);
+  } else {
+    alert("Please select an option or roll the dice");
   }
 });
 
