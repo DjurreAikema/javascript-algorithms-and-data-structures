@@ -32,7 +32,10 @@ rulesBtn.addEventListener("click", () => {
 });
 
 // Keep score
-keepScoreBtn.addEventListener("click", () => {});
+keepScoreBtn.addEventListener("click", () => {
+  let selectedValue;
+  let achieved;
+});
 
 
 // Roll dice algorithm
