@@ -43,6 +43,14 @@ keepScoreBtn.addEventListener("click", () => {
       break;
     }
   }
+
+  if (selectedValue) {
+    rolls = 0;
+    round++;
+    updateStats();
+    resetRadioOption();
+    updateScore(selectedValue, achieved);
+  }
 });
 
 
