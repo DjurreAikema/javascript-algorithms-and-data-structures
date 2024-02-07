@@ -144,6 +144,7 @@ const detectFullHouse = (arr) => {
   const counts = {};
 
   for (const num of arr) {
+    counts[num] = counts[num] ? counts[num] + 1 : 1;
   }
 };
 
