@@ -162,6 +162,8 @@ const checkForStraights = (arr) => {
   const sortedNumbersArr = arr.sort((a, b) => a - b);
   const uniqueNumbersArr = [...new Set(sortedNumbersArr)];
   const uniqueNumbersStr = uniqueNumbersArr.join("");
+
+  const smallStraightsArr = ["1234", "2345", "3456"];
 };
 
 const getHighestDuplicates = (arr) => {
