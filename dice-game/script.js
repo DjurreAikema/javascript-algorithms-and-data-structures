@@ -119,7 +119,9 @@ const resetGame = () => {
   rolls = 0;
   round = 1;
 
-  listOfAllDice.forEach((dice, index) => {});
+  listOfAllDice.forEach((dice, index) => {
+    dice.textContent = diceValuesArr[index];
+  });
 };
 
 const updateScore = (selectedValue, achieved) => {
