@@ -161,6 +161,7 @@ const detectFullHouse = (arr) => {
 const checkForStraights = (arr) => {
   const sortedNumbersArr = arr.sort((a, b) => a - b);
   const uniqueNumbersArr = [...new Set(sortedNumbersArr)];
+  const uniqueNumbersStr = uniqueNumbersArr.join("");
 };
 
 const getHighestDuplicates = (arr) => {
