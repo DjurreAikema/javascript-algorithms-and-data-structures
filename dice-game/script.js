@@ -140,6 +140,10 @@ const updateScore = (selectedValue, achieved) => {
   scoreHistory.innerHTML += `<li>${achieved} : ${selectedValue}</li>`;
 };
 
+const detectFullHouse = (arr) => {
+  const counts = {};
+};
+
 const getHighestDuplicates = (arr) => {
   const counts = {};
 
