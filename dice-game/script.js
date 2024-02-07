@@ -164,6 +164,7 @@ const checkForStraights = (arr) => {
   const uniqueNumbersStr = uniqueNumbersArr.join("");
 
   const smallStraightsArr = ["1234", "2345", "3456"];
+  const largeStraightsArr = ["12345", "23456"];
 };
 
 const getHighestDuplicates = (arr) => {
