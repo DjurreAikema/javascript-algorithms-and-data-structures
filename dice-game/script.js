@@ -146,6 +146,8 @@ const detectFullHouse = (arr) => {
   for (const num of arr) {
     counts[num] = counts[num] ? counts[num] + 1 : 1;
   }
+
+  const hasThreeOfAKind = Object.values(counts).includes(3);
 };
 
 const getHighestDuplicates = (arr) => {
