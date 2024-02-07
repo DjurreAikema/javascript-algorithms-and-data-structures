@@ -147,6 +147,7 @@ const detectFullHouse = (arr) => {
     counts[num] = counts[num] ? counts[num] + 1 : 1;
   }
 
+  const hasPair = Object.values(counts).includes(2);
   const hasThreeOfAKind = Object.values(counts).includes(3);
 };
 
