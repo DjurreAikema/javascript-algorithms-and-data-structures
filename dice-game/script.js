@@ -127,6 +127,8 @@ const resetGame = () => {
   scoreHistory.innerHTML = "";
   currentRoundRollsText.textContent = rolls;
   currentRoundText.textContent = round;
+
+  resetRadioOption();
 };
 
 const updateScore = (selectedValue, achieved) => {
