@@ -149,6 +149,10 @@ const detectFullHouse = (arr) => {
 
   const hasPair = Object.values(counts).includes(2);
   const hasThreeOfAKind = Object.values(counts).includes(3);
+
+  if (hasThreeOfAKind && hasPair) {
+    updateRadioOption(2, 25);
+  }
 };
 
 const getHighestDuplicates = (arr) => {
