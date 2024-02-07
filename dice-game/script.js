@@ -158,6 +158,8 @@ const detectFullHouse = (arr) => {
   updateRadioOption(5, 0);
 };
 
+const checkForStraights = (arr) => {};
+
 const getHighestDuplicates = (arr) => {
   const counts = {};
 
