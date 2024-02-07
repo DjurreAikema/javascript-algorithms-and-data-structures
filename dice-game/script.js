@@ -169,6 +169,10 @@ const checkForStraights = (arr) => {
   if (smallStraightsArr.includes(uniqueNumbersStr)) {
     updateRadioOption(3, 30);
   }
+
+  if (largeStraightsArr.includes(uniqueNumbersStr)) {
+    updateRadioOption(4, 40);
+  }
 };
 
 const getHighestDuplicates = (arr) => {
