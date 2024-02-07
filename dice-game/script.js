@@ -142,6 +142,9 @@ const updateScore = (selectedValue, achieved) => {
 
 const detectFullHouse = (arr) => {
   const counts = {};
+
+  for (const num of arr) {
+  }
 };
 
 const getHighestDuplicates = (arr) => {
