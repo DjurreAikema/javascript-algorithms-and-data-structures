@@ -112,6 +112,8 @@ const resetRadioOption = () => {
   });
 };
 
+const resetGame = () => {};
+
 const updateScore = (selectedValue, achieved) => {
   totalScore += parseInt(selectedValue);
   totalScoreText.textContent = totalScore;
