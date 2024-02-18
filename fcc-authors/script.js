@@ -10,7 +10,8 @@ fetch("https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json")
     res.json();
   })
   .then((data) => {
-    console.log(data);
+    authorDataArr = data;
+    displayAuthors();
   })
   .catch((err) => {
     console.error(`There was an error: ${err}`);
