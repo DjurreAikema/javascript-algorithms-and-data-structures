@@ -31,6 +31,8 @@ const fetchData = async () => {
   }
 };
 
+const viewCount = (views) => {};
+
 fetchData();
 
 const showLatestPosts = (data) => {
