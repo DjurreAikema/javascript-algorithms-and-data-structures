@@ -24,5 +24,7 @@ const showLatestPosts = (data) => {
 
   postsContainer.innerHTML = topics.map((item) => {
     const { id, title, views, posts_count, slug, posters, category_id, bumped_at } = item;
+
+    return `<tr></tr>`;
   });
 };
