@@ -47,7 +47,7 @@ const showLatestPosts = (data) => {
           <td></td>
           <td>${posts_count - 1}</td>
           <td>${views}</td>
-          <td></td>
+          <td>${timeAgo(bumped_at)}</td>
         </tr>
       `;
     })
