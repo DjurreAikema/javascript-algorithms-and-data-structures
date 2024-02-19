@@ -12,6 +12,7 @@ const timeAgo = (time) => {
 
   const msPerMinute = 1000 * 60;
   const minutesAgo = Math.floor(timeDifference / msPerMinute);
+  const hoursAgo = Math.floor(minutesAgo / 60);
 };
 
 const fetchData = async () => {
