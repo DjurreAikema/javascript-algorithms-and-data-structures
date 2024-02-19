@@ -15,9 +15,8 @@ const timeAgo = (time) => {
   const hoursAgo = Math.floor(minutesAgo / 60);
   const daysAgo = Math.floor(hoursAgo / 24);
 
-  if (minutesAgo < 60) {
-    return `${minutesAgo}mago`;
-  }
+  if (minutesAgo < 60) return `${minutesAgo}mago`;
+  if (hoursAgo < 24) return `${hoursAgo}hago`;
 };
 
 const fetchData = async () => {
