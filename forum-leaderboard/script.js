@@ -8,6 +8,7 @@ const postsContainer = document.getElementById("posts-container");
 const timeAgo = (time) => {
   const currentTime = new Date();
   const lastPost = new Date(time);
+  const timeDifference = currentTime - lastPost;
 };
 
 const fetchData = async () => {
