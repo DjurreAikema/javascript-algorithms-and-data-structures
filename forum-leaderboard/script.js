@@ -7,6 +7,7 @@ const postsContainer = document.getElementById("posts-container");
 
 const timeAgo = (time) => {
   const currentTime = new Date();
+  const lastPost = new Date(time);
 };
 
 const fetchData = async () => {
