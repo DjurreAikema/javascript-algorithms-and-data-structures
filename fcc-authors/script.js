@@ -30,4 +30,7 @@ const displayAuthors = (authors) => {
   });
 };
 
-const fetchMoreAuthors = () => {};
+const fetchMoreAuthors = () => {
+  startingIndex += 8;
+  endingIndex += 8;
+};
