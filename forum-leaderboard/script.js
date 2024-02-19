@@ -16,7 +16,9 @@ const allCategories = {
   560: { category: "Backend Development", className: "backend" },
 };
 
-const forumCategory = (id) => {};
+const forumCategory = (id) => {
+  let selectedCategory = {};
+};
 
 const timeAgo = (time) => {
   const currentTime = new Date();
