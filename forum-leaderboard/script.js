@@ -52,15 +52,17 @@ const timeAgo = (time) => {
 };
 
 const avatars = (posters, users) => {
-  return posters.map((poster) => {
-    const user = users.find((user) => user.id === poster.user_id);
+  return posters
+    .map((poster) => {
+      const user = users.find((user) => user.id === poster.user_id);
 
-    if (user) {
-      const avatar = user.avatar_template.replace(/{size}/, 30);
-      const userAvatarUrl = avatar.startsWith("/user_avatar/") ? avatarUrl.concat(avatar) : avatar;
-      return `<img src="${userAvatarUrl}" alt="${user.name}" />`;
-    }
-  });
+      if (user) {
+        const avatar = user.avatar_template.replace(/{size}/, 30);
+        const userAvatarUrl = avatar.startsWith("/user_avatar/") ? avatarUrl.concat(avatar) : avatar;
+        return `<img src="${userAvatarUrl}" alt="${user.name}" />`;
+      }
+    })
+    .join("");
 };
 
 const fetchData = async () => {
