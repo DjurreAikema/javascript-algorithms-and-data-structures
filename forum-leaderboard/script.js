@@ -51,6 +51,8 @@ const timeAgo = (time) => {
   return `${daysAgo}d ago`;
 };
 
+const avatars = (posters, users) => {};
+
 const fetchData = async () => {
   try {
     const res = await fetch(forumLatest);
