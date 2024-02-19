@@ -8,5 +8,6 @@ const postsContainer = document.getElementById("posts-container");
 const fetchData = async () => {
   try {
     const res = await fetch(forumLatest);
+    const data = await res.json();
   } catch (err) {}
 };
