@@ -98,7 +98,7 @@ const showLatestPosts = (data) => {
             <p class="post-title">${title}</p>
             ${forumCategory(category_id)}
           </td>
-          <td></td>
+          <td><div class="avatar-container"></div></td>
           <td>${posts_count - 1}</td>
           <td>${viewCount(views)}</td>
           <td>${timeAgo(bumped_at)}</td>
