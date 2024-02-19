@@ -18,6 +18,9 @@ const allCategories = {
 
 const forumCategory = (id) => {
   let selectedCategory = {};
+
+  if (allCategories.hasOwnProperty(id)) {
+  }
 };
 
 const timeAgo = (time) => {
