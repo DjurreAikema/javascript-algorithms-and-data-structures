@@ -31,7 +31,9 @@ const fetchData = async () => {
   }
 };
 
-const viewCount = (views) => {};
+const viewCount = (views) => {
+  const thousands = Math.floor(views / 1000);
+};
 
 fetchData();
 
