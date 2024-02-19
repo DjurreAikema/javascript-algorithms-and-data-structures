@@ -5,7 +5,9 @@ const avatarUrl = "https://sea1.discourse-cdn.com/freecodecamp";
 
 const postsContainer = document.getElementById("posts-container");
 
-const timeAgo = (time) => {};
+const timeAgo = (time) => {
+  const currentTime = new Date();
+};
 
 const fetchData = async () => {
   try {
