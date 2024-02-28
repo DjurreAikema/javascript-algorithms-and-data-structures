@@ -1,4 +1,4 @@
-let price = 19.5;
+let price = 3.26;
 let cid = [
   ["PENNY", 1.01],
   ["NICKEL", 2.05],
@@ -40,9 +40,10 @@ const calculateChange = (price, payment) => {
     if (item[3] < difference) {
       changeDict[item[0]] = 0;
 
-      while (difference >= item[3]) {
+      while (difference >= item[3] && item[2] > 0) {
         changeDict[item[0]] += item[3];
         difference = difference - item[3];
+        item[2] = item[2] - 1;
       }
     }
   });
