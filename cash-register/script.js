@@ -101,3 +101,4 @@ const amountOfCurrency = () => {
 const divideAndRound = (input, divider) => Math.round(input / divider);
 
 const isZero = (item) => item[2] == 0;
+
