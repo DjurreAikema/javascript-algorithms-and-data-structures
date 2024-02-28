@@ -1,14 +1,14 @@
-let price = 3.26;
+let price = 19.5;
 let cid = [
-  ["PENNY", 1.01],
-  ["NICKEL", 2.05],
-  ["DIME", 3.1],
-  ["QUARTER", 4.25],
-  ["ONE", 90],
-  ["FIVE", 55],
-  ["TEN", 20],
-  ["TWENTY", 60],
-  ["ONE HUNDRED", 100],
+  ["PENNY", 0.01],
+  ["NICKEL", 0],
+  ["DIME", 0],
+  ["QUARTER", 0],
+  ["ONE", 0],
+  ["FIVE", 0],
+  ["TEN", 0],
+  ["TWENTY", 0],
+  ["ONE HUNDRED", 0],
 ];
 
 const cashInput = document.getElementById("cash");
@@ -49,9 +49,12 @@ const calculateChange = (price, payment) => {
   });
 
   console.log(changeDict);
-  for (const [key, value] of Object.entries(changeDict)) {
-    console.log(key, value);
-    changeDueDiv.innerHTML += `${key} $${value} <br />`;
+  if (difference === 0) {
+    for (const [key, value] of Object.entries(changeDict)) {
+      changeDueDiv.innerHTML += `${key} $${value} <br />`;
+    }
+  } else {
+    changeDueDiv.innerHTML = `Status: INSUFFICIENT_FUNDS`;
   }
 };
 
