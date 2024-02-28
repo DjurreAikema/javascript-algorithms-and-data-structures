@@ -1,21 +1,36 @@
 const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
 
-const pokemonName = document.getElementById("pokemon-name");
-const pokemonId = document.getElementById("pokemon-id");
-const weight = document.getElementById("weight");
-const height = document.getElementById("height");
-const types = document.getElementById("types");
-const hp = document.getElementById("hp");
-const attack = document.getElementById("attack");
-const defense = document.getElementById("defense");
-const specialAttack = document.getElementById("special-attack");
-const specialDefense = document.getElementById("special-defense");
-const speed = document.getElementById("speed");
-
+const pokemonNameDiv = document.getElementById("pokemon-name");
+const pokemonIdDiv = document.getElementById("pokemon-id");
+const weightDiv = document.getElementById("weight");
+const heightDiv = document.getElementById("height");
+const typesDiv = document.getElementById("types");
+const hpDiv = document.getElementById("hp");
+const attackDiv = document.getElementById("attack");
+const defenseDiv = document.getElementById("defense");
+const specialAttackDiv = document.getElementById("special-attack");
+const specialDefenseDiv = document.getElementById("special-defense");
+const speedDiv = document.getElementById("speed");
 
 searchButton.addEventListener("click", () => {
-  searchVal = searchInput.value;
+  const searchVal = searchInput.value;
 
   if (searchVal === "Red") alert("Pokémon not found");
+
+  if (searchVal === "Pikachu") setValues("PIKACHU", 25, 60, 4, 35, 55, 40, 50, 50, 90);
 });
+
+const setValues = (name, id, weight, height, types, hp, attack, defence, specialAttack, specialDefence, speed) => {
+  pokemonNameDiv.innerText = `${name}`;
+  pokemonIdDiv.innerText = `${id}`;
+  weightDiv.innerText = `${weight}`;
+  heightDiv.innerText = `${height}`;
+  typesDiv.innerText = `${types}`;
+  hpDiv.innerText = `${hp}`;
+  attackDiv.innerText = `${attack}`;
+  defenseDiv.innerText = `${defence}`;
+  specialAttackDiv.innerText = `${specialAttack}`;
+  specialDefenseDiv.innerText = `${specialDefence}`;
+  speedDiv.innerText = `${speed}`;
+};
