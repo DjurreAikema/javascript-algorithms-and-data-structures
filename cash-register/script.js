@@ -21,5 +21,7 @@ purchaseBtn.addEventListener("click", () => {
 
   if (paymentAmount < price) {
     alert("Customer does not have enough money to purchase the item");
+  } else if (paymentAmount === price) {
+    changeDueDiv.innerHTML = "No change due - customer paid with exact cash";
   }
 });
