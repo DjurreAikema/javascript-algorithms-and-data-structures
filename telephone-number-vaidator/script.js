@@ -3,6 +3,17 @@ const checkBtn = document.getElementById("check-btn");
 const clearBtn = document.getElementById("clear-btn");
 const resultsDiv = document.getElementById("results-div");
 
+const numbersArr = [
+  "1 555-555-5555",
+  "1 (555) 555-5555",
+  "5555555555",
+  "555-555-5555",
+  "(555)555-5555",
+  "1(555)555-5555",
+  "555-5555",
+  "5555555",
+  "1 555)555-5555",
+];
 
 checkBtn.addEventListener("click", () => {
   const number = userInput.value;
@@ -12,13 +23,15 @@ checkBtn.addEventListener("click", () => {
     return;
   }
 
-  if (isNumberValid(number)) {
-    resultsDiv.textContent += `Valid US number: ${number}`;
-    return;
-  } else {
-    resultsDiv.textContent += `Invalid US number: ${number}`;
-    return;
-  }
+  numbersArr.forEach((num) => {
+    if (isNumberValid(num)) {
+      resultsDiv.innerHTML += `Valid US number: ${num} <br />`;
+      return;
+    } else {
+      resultsDiv.innerHTML += `Invalid US number: ${num}  <br />`;
+      return;
+    }
+  });
 });
 
 clearBtn.addEventListener("click", () => {
@@ -26,7 +39,7 @@ clearBtn.addEventListener("click", () => {
 });
 
 const isNumberValid = (number) => {
-  const validNumberRegex = /([1]{1})?\s?[(]?[0-9]{3}[)]?(\s?|-?)[0-9]{3}(\s?|-?)[0-9]{4}/;
+  const validNumberRegex = /([1]{1})?\s?([0-9]{3}|[(][0-9]{3}[)])(\s?|-?)[0-9]{3}(\s?|-?)[0-9]{4}/;
   return validNumberRegex.test(number);
 };
 
