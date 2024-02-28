@@ -30,6 +30,7 @@ const numbersArr = [
   "555)-555-5555",
   "(555-555-5555",
   "(555)5(55?)-5555",
+  "55 55-55-555-5",
 ];
 
 checkBtn.addEventListener("click", () => {
