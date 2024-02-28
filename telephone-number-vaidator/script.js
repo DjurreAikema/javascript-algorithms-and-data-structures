@@ -7,3 +7,7 @@ const resultsDiv = document.getElementById("results-div");
 checkBtn.addEventListener("click", () => {
   if (userInput.value === "") alert("Please provide a phone number");
 });
+
+clearBtn.addEventListener("click", () => {
+  resultsDiv.textContent = "";
+});
