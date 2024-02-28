@@ -22,15 +22,15 @@ searchButton.addEventListener("click", () => {
 });
 
 const setValues = (name, id, weight, height, types, hp, attack, defence, specialAttack, specialDefence, speed) => {
-  pokemonNameDiv.innerText = `${name}`;
-  pokemonIdDiv.innerText = `${id}`;
-  weightDiv.innerText = `${weight}`;
-  heightDiv.innerText = `${height}`;
-  typesDiv.innerText = `${types}`;
-  hpDiv.innerText = `${hp}`;
-  attackDiv.innerText = `${attack}`;
-  defenseDiv.innerText = `${defence}`;
-  specialAttackDiv.innerText = `${specialAttack}`;
-  specialDefenseDiv.innerText = `${specialDefence}`;
-  speedDiv.innerText = `${speed}`;
+  if (name) pokemonNameDiv.textContent = `${name}`;
+  if (id) pokemonIdDiv.textContent = `${id}`;
+  if (weight) weightDiv.textContent = `${weight}`;
+  if (height) heightDiv.textContent = `${height}`;
+  if (types) typesDiv.textContent = `${types}`;
+  if (hp) hpDiv.textContent = `${hp}`;
+  if (attack) attackDiv.textContent = `${attack}`;
+  if (defence) defenseDiv.textContent = `${defence}`;
+  if (specialAttack) specialAttackDiv.textContent = `${specialAttack}`;
+  if (specialDefence) specialDefenseDiv.textContent = `${specialDefence}`;
+  if (speed) speedDiv.textContent = `${speed}`;
 };
