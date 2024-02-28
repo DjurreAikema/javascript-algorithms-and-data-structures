@@ -12,3 +12,10 @@ const defense = document.getElementById("defense");
 const specialAttack = document.getElementById("special-attack");
 const specialDefense = document.getElementById("special-defense");
 const speed = document.getElementById("speed");
+
+
+searchButton.addEventListener("click", () => {
+  searchVal = searchInput.value;
+
+  if (searchVal === "Red") alert("Pokémon not found");
+});
