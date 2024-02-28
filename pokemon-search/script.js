@@ -17,20 +17,26 @@ searchButton.addEventListener("click", () => {
   const searchVal = searchInput.value;
 
   if (searchVal === "Red") alert("Pokémon not found");
-
   if (searchVal === "Pikachu") setValues("PIKACHU", 25, 60, 4, 35, 55, 40, 50, 50, 90);
 });
 
 const setValues = (name, id, weight, height, types, hp, attack, defence, specialAttack, specialDefence, speed) => {
-  if (name) pokemonNameDiv.textContent = `${name}`;
-  if (id) pokemonIdDiv.textContent = `${id}`;
-  if (weight) weightDiv.textContent = `${weight}`;
-  if (height) heightDiv.textContent = `${height}`;
-  if (types) typesDiv.textContent = `${types}`;
-  if (hp) hpDiv.textContent = `${hp}`;
-  if (attack) attackDiv.textContent = `${attack}`;
-  if (defence) defenseDiv.textContent = `${defence}`;
-  if (specialAttack) specialAttackDiv.textContent = `${specialAttack}`;
-  if (specialDefence) specialDefenseDiv.textContent = `${specialDefence}`;
-  if (speed) speedDiv.textContent = `${speed}`;
+  setElement(pokemonNameDiv, name);
+  setElement(pokemonIdDiv, id);
+  setElement(weightDiv, weight);
+  setElement(heightDiv, height);
+  setElement(typesDiv, types);
+  setElement(hpDiv, hp);
+  setElement(attackDiv, attack);
+  setElement(defenseDiv, defence);
+  setElement(specialAttackDiv, specialAttack);
+  setElement(specialDefenseDiv, specialDefence);
+  setElement(speedDiv, speed);
+};
+
+const setElement = (element, value) => {
+  if (value) {
+    element.textContent = `${value}`;
+    element.value = value;
+  } else element.textContent = "";
 };
