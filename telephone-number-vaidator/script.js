@@ -5,6 +5,5 @@ const resultsDiv = document.getElementById("results-div");
 
 
 checkBtn.addEventListener("click", () => {
-  alert("Please provide a phone number");
-  console.log("test");
+  if (userInput.value === "") alert("Please provide a phone number");
 });
