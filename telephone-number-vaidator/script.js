@@ -16,6 +16,8 @@ checkBtn.addEventListener("click", () => {
     resultsDiv.textContent += `Valid US number: ${number}`;
     return;
   } else {
+    resultsDiv.textContent += `Invalid US number: ${number}`;
+    return;
   }
 });
 
@@ -24,5 +26,11 @@ clearBtn.addEventListener("click", () => {
 });
 
 const isNumberValid = (number) => {
-  return true;
+  const validNumberRegex = /[1]{1}\s?[(]?[0-9]{3}[)]?(\\s?|-?)[0-9]{3}(\s?|-?)[0-9]{4}/;
+  return validNumberRegex.test(number);
+};
+
+const cleanUserInput = (input) => {
+  const cleanedInput = input.trim();
+  return cleanedInput;
 };
