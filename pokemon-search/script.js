@@ -17,10 +17,10 @@ searchButton.addEventListener("click", () => {
   const searchVal = searchInput.value;
 
   if (searchVal === "Red") alert("Pokémon not found");
-  if (searchVal === "Pikachu") setValues("PIKACHU", 25, 60, 4, 35, 55, 40, 50, 50, 90);
+  if (searchVal === "Pikachu") setValues("PIKACHU", 25, 60, 4, "", 35, 55, 40, 50, 50, 90);
 });
 
-const setValues = (name, id, weight, height, types, hp, attack, defence, specialAttack, specialDefence, speed) => {
+const setValues = (name, id, weight, height, types, hp, attack, defense, specialAttack, specialDefense, speed) => {
   setElement(pokemonNameDiv, name);
   setElement(pokemonIdDiv, id);
   setElement(weightDiv, weight);
@@ -28,9 +28,9 @@ const setValues = (name, id, weight, height, types, hp, attack, defence, special
   setElement(typesDiv, types);
   setElement(hpDiv, hp);
   setElement(attackDiv, attack);
-  setElement(defenseDiv, defence);
+  setElement(defenseDiv, defense);
   setElement(specialAttackDiv, specialAttack);
-  setElement(specialDefenseDiv, specialDefence);
+  setElement(specialDefenseDiv, specialDefense);
   setElement(speedDiv, speed);
 };
 
@@ -38,5 +38,8 @@ const setElement = (element, value) => {
   if (value) {
     element.textContent = `${value}`;
     element.value = value;
-  } else element.textContent = "";
+  } else {
+    element.textContent = "";
+    element.value = null;
+  }
 };
