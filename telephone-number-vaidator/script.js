@@ -17,6 +17,7 @@ const numbersArr = [
   "1 456 789 4444",
   "123**&!!asdf#",
   "55555555",
+  "(6054756961)",
 ];
 
 checkBtn.addEventListener("click", () => {
@@ -50,7 +51,7 @@ clearBtn.addEventListener("click", () => {
 });
 
 const isNumberValid = (number) => {
-  const validNumberRegex = /([1]{1})?\s?([0-9]{3}|[(][0-9]{3}[)])(\s?|-?)[0-9]{3}(\s?|-?)[0-9]{4}/;
+  const validNumberRegex = /^([1]{1})?\s?([0-9]{3}|[(][0-9]{3}[)])(\s?|-?)[0-9]{3}(\s?|-?)[0-9]{4}$/;
   return validNumberRegex.test(number);
 };
 
