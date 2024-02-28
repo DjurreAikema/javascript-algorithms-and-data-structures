@@ -10,3 +10,16 @@ let cid = [
   ["TWENTY", 60],
   ["ONE HUNDRED", 100],
 ];
+
+
+const cashInput = document.getElementById("cash");
+const changeDueDiv = document.getElementById("change-due");
+const purchaseBtn = document.getElementById("purchase-btn");
+
+purchaseBtn.addEventListener("click", () => {
+  const paymentAmount = cashInput.value;
+
+  if (paymentAmount < price) {
+    alert("Customer does not have enough money to purchase the item");
+  }
+});
