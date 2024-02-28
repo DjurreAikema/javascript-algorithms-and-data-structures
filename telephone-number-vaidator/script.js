@@ -13,6 +13,7 @@ const numbersArr = [
   "555-5555",
   "5555555",
   "1 555)555-5555",
+  "1 555 555 5555",
 ];
 
 checkBtn.addEventListener("click", () => {
@@ -20,18 +21,25 @@ checkBtn.addEventListener("click", () => {
 
   if (number === "") {
     alert("Please provide a phone number");
+
+    numbersArr.forEach((num) => {
+      if (isNumberValid(num)) {
+        resultsDiv.innerHTML += `Valid US number: ${num} <br />`;
+      } else {
+        resultsDiv.innerHTML += `Invalid US number: ${num}  <br />`;
+      }
+    });
+
     return;
   }
 
-  numbersArr.forEach((num) => {
-    if (isNumberValid(num)) {
-      resultsDiv.innerHTML += `Valid US number: ${num} <br />`;
-      return;
-    } else {
-      resultsDiv.innerHTML += `Invalid US number: ${num}  <br />`;
-      return;
-    }
-  });
+  if (isNumberValid(number)) {
+    resultsDiv.innerHTML += `Valid US number: ${number} <br />`;
+    return;
+  } else {
+    resultsDiv.innerHTML += `Invalid US number: ${number}  <br />`;
+    return;
+  }
 });
 
 clearBtn.addEventListener("click", () => {
