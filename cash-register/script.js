@@ -1,6 +1,6 @@
 let price = 19.5;
 let cid = [
-  ["PENNY", 0.01],
+  ["PENNY", 0.5],
   ["NICKEL", 0],
   ["DIME", 0],
   ["QUARTER", 0],
@@ -25,7 +25,6 @@ purchaseBtn.addEventListener("click", () => {
   } else if (paymentAmount === price) {
     changeDueDiv.innerHTML = "No change due - customer paid with exact cash";
   } else {
-    changeDueDiv.innerHTML = "Status: OPEN <br />";
     calculateChange(price, paymentAmount);
   }
 });
@@ -37,21 +36,28 @@ const calculateChange = (price, payment) => {
   if (difference <= 0) return;
 
   cid.reverse().forEach((item) => {
-    if (item[3] < difference) {
+    if (item[3] <= difference && item[2] > 0) {
       changeDict[item[0]] = 0;
 
       while (difference >= item[3] && item[2] > 0) {
         changeDict[item[0]] += item[3];
-        difference = difference - item[3];
+        difference = parseFloat(difference - item[3]).toFixed(2);
         item[2] = item[2] - 1;
       }
     }
   });
 
-  console.log(changeDict);
-  if (difference === 0) {
+  if (difference > 0) {
+    changeDueDiv.innerHTML = "Status: OPEN <br />";
+
     for (const [key, value] of Object.entries(changeDict)) {
-      changeDueDiv.innerHTML += `${key} $${value} <br />`;
+      changeDueDiv.innerHTML += `${key} $${parseFloat(value).toFixed(2)} <br />`;
+    }
+  } else if (difference == 0) {
+    changeDueDiv.innerHTML = "Status: CLOSED <br />";
+
+    for (const [key, value] of Object.entries(changeDict)) {
+      changeDueDiv.innerHTML += `${key} $${parseFloat(value).toFixed(2)} <br />`;
     }
   } else {
     changeDueDiv.innerHTML = `Status: INSUFFICIENT_FUNDS`;
