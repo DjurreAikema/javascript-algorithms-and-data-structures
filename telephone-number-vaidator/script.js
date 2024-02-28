@@ -22,6 +22,7 @@ const numbersArr = [
   "0 (757) 622-7382",
   "-1 (757) 622-7382",
   "2 757 622-7382",
+  "10 (757) 622-7382",
 ];
 
 checkBtn.addEventListener("click", () => {
