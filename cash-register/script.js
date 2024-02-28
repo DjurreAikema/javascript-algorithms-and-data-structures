@@ -62,7 +62,6 @@ const calculateChange = (price, payment) => {
   } else {
     changeDueDiv.innerHTML = `Status: INSUFFICIENT_FUNDS`;
   }
-
 };
 
 // Calculate how much of each currency is available
